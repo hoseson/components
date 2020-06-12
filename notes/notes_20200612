@@ -1,0 +1,16 @@
+[In order to use ready-made css styles]
+semantic-ui.com
+    has default css styling files that we can use for free
+    when we install semantic ui, don't follow the directions, because it's complicated.
+    just Google 'semantic ui cdn'
+    go the site and look for https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
+    then link the css in index.html under head with <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+
+
+[In order to use randomly generated fake data]
+just Google faker js
+    generate massive amounts of realistic fake data in Node.js and the browser
+    useful when developing something without real data
+    import faker from 'faker';
+    then {faker.image.avatar()} in JSX
