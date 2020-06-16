@@ -1,0 +1,50 @@
+This is where component reusability comes into play.
+If we copy the comment component that we made and make two copies so that there are three comments,
+the code becomes awful to read, which is why we need to make reusable components.
+
+
+
+[Creating a reusable, configurable component]
+1. Identify the JSX that appears to be duplicated
+2. What is the purpose of that block of JSX? Think of a descriptive name for what it does
+3. Create a new file to house this new component - it should have the same name as the component
+4. Create a new component in the new file, paste the JSX into it
+5. Make the new component configurable by using React's 'props' system
+
+The props system allows us to configure a component whenever we reuse it
+(Because obviously the contents of the reused component will not be the exact same as the first occurence)
+
+In order to render the component that was refactored into a new file, we need to do two thing:
+1. add an export statement to the file that contains the component JSX
+    export default CommentDetail;
+2. add an import statement to index.js
+    import CommentDetail from "./CommentDetail";
+
+When finally add the component to div that we want it in,
+we don't use curly braces (the only exception)
+We place the imported component in a self-closing tag.
+
+
+
+[Component Hierarchy]
+A diagram that shows the relationship between components
+(ie. Parent - Child relationships)
+
+
+
+[Props]
+System for passing data from a parent component to a child component
+Goal is to customize or configure a child component
+(remember that React's purpose is either to show a component on the screen or to respond to user interactions)
+
+props is short for properties
+
+
+
+Providing props from parent to child
+<CommentDetail name of prop = value of prop />
+ie. <CommentDetail author = "Sam"p />
+
+Consuming props provided by parent
+1. give props as argument to the function containing the component JSX
+2. mention the specific prop to be consumed in curly braces like so: {props.author}
