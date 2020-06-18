@@ -1,0 +1,19 @@
+We only looked at function-based components up till now,
+but now we'll also start to look at class-based components and event handling.
+Use functional components for simple content
+Use class components for anything else
+
+
+
+[Benefits of class components]
+Easier code organization
+Can use 'state' (another React system) -> Easier to handle user input
+Understand lifecycle events -> Easier to do things when the app first starts
+
+
+
+[Making the UI change according to user location and current month]
+Challenges
+1. Need to get the user's physical location
+2. Need to determine the current month
+3. Need to change text and styling based on location + month
